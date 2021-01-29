@@ -23,7 +23,7 @@ export const NavMyName = styled(Link)`
 `;
 
 export const NavMenu = styled.ul`
-    display: flex;
+    display: flex;  
 
     align-items: center;
     text-align: center;
@@ -46,4 +46,6 @@ export const Linkedin = styled.img`
 export const GitHub = styled.img`
     height: 35px;
     width: 35px;
+
+    padding-left: 1px;
 `;
