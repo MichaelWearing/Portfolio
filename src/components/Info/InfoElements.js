@@ -20,6 +20,9 @@ export const InfoH1Container = styled.div`
 `;
 
 export const InfoH1 = styled.h1`
+  font-size: 75px;
+`;
+export const InfoH2 = styled.h1`
   font-size: 45px;
 `;
 

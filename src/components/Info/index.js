@@ -9,6 +9,7 @@ import {
   InfoContainer,
   InfoH1Container,
   InfoH1,
+  InfoH2,
   InfoImg,
   InfoText,
   InfoArrow,
@@ -20,8 +21,8 @@ export default function Info() {
     <>
       <InfoContainer id="info">
         <InfoH1Container>
-          <InfoH1>Hey! I'm Michael,</InfoH1>
-          <InfoH1>a Full-Stack Developer!</InfoH1>
+          <InfoH1>Michael Wearing</InfoH1>
+          <InfoH2>Full-Stack Developer</InfoH2>
         </InfoH1Container>
         <InfoImg src={mikey} />
       </InfoContainer>
