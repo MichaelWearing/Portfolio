@@ -8,7 +8,12 @@ export const NavContainer = styled.div`
 
     background: violet;
 
-    height: 60px;
+    min-height: 6vh;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 5;
 `;
 
 export const NavMyName = styled(Link)`
@@ -20,6 +25,10 @@ export const NavMyName = styled(Link)`
     font-size: 1.5em;
 
     cursor: pointer;
+
+    &:hover {
+        color: white;
+    }
 `;
 
 export const NavMenu = styled.ul`
@@ -32,6 +41,12 @@ export const NavMenu = styled.ul`
 
 export const NavLinks = styled(Link)`
     padding: 1em;
+
+    cursor: pointer;
+
+    &:hover {
+        color: white;
+    }
 `;
 
 export const NavItem = styled.li`

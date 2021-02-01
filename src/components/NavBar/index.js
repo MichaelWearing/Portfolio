@@ -13,16 +13,22 @@ import {
   GitHub,
 } from "./NavBarElements";
 
+import { FaReact, FaGithub, FaPlay } from "react-icons/fa";
+
 export default function NavBar() {
   return (
     <NavContainer>
-      <NavMyName>Michael Wearing</NavMyName>
+      <NavMyName to="info" smooth={true} offset={-50}>Michael Wearing</NavMyName>
       <NavMenu>
         <NavItem>
-          <NavLinks>About</NavLinks>
+          <NavLinks to="about" smooth={true} offset={-35}>
+            About
+          </NavLinks>
         </NavItem>
         <NavItem>
-          <NavLinks>Projects</NavLinks>
+          <NavLinks to="projects" smooth={true} offset={-35}>
+            Projects
+          </NavLinks>
         </NavItem>
         <NavItem>
           <NavLinks>Experience</NavLinks>
@@ -31,7 +37,9 @@ export default function NavBar() {
           <NavLinks>Skills</NavLinks>
         </NavItem>
         <NavItem>
-          <NavLinks>Contact</NavLinks>
+          <NavLinks to="contact" smooth={true} offset={-35}>
+            Contact
+          </NavLinks>
         </NavItem>
         <NavItem>
           <a href="https://www.linkedin.com/in/michael-wearing/">
