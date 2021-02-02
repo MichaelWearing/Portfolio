@@ -6,7 +6,7 @@ export const NavContainer = styled.div`
     justify-content: space-between;
     padding: 0 24px;
 
-    background: violet;
+    background: deepskyblue;
 
     min-height: 6vh;
 

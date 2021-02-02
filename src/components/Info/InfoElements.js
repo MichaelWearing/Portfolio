@@ -4,12 +4,13 @@ export const InfoContainer = styled.div`
   background: deepskyblue;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 
   padding: 0 30px;
-  min-height: 80vh;
+  min-height: 94vh;
 `;
 
 export const InfoH1Container = styled.div`
@@ -45,8 +46,6 @@ export const InfoText = styled.p`
 `;
 
 export const InfoArrow = styled.img`
-  background: deepskyblue;
-
   display: flex;
 
   min-height: 14vh;

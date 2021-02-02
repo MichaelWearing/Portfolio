@@ -54,7 +54,7 @@ export default function Projects() {
             <h4>Description: </h4>
             <p>
               This is a project I made towards the end of my time at salt. This
-              app was made in a 1 day. It is an app that allows the user to
+              app was made in 1 day. It is an app that allows the user to
               choose a planet, and then a character from that planet, and
               finally see information about that character.
             </p>

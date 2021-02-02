@@ -1,5 +1,7 @@
 import React from "react";
 
+import { FaEnvelope, FaLinkedin } from "react-icons/fa";
+
 import {
   ContactH1,
   ContactBox,
@@ -22,6 +24,14 @@ export default function Contact() {
       </ContactBox>
       <br />
       <br />
+      <p>Feel free to contact me via email</p>
+      <a href="mailto:mikeywearing@gmail.com">
+        <FaEnvelope />
+      </a>
+      <p>By phone</p> 
+      <p>0762970258</p> 
+      <p>Or reach out to me on Linkedin</p> 
+      <FaLinkedin />
     </>
   );
 }
