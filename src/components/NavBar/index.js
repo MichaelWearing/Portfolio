@@ -46,12 +46,20 @@ export default function NavBar() {
         </NavItem>
         <NavIcons>
           <NavItem>
-            <a href="https://www.linkedin.com/in/michael-wearing/">
+            <a
+              href="https://www.linkedin.com/in/michael-wearing/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Linkedin src={linkedin} />
             </a>
           </NavItem>
           <NavItem>
-            <a href="https://github.com/MichaelWearing">
+            <a
+              href="https://github.com/MichaelWearing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <GitHub src={github} />
             </a>
           </NavItem>
