@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContactH1 = styled.h1`
-  background: springgreen;
+  background: #CEDAED;
 
   text-align: center;
   font-size: 8vh;
@@ -37,4 +37,23 @@ export const MesageBox = styled.textarea`
   border-radius: 6px;
   border: 1px solid black;
   padding: 5px 8px;
+`;
+
+export const ContactDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 5vh;
+
+  padding: 5vh 0 10vh 0;
+`;
+
+export const ContactIcons = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px 79vh;
+
+  @media screen and (min-width: 1500px) {
+    padding: 0px 90vh;
+  }
 `;

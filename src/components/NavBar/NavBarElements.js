@@ -1,66 +1,73 @@
 import styled from "styled-components";
-import { Link } from "react-scroll";
+import { Link } from "react-scroll";
 
 export const NavContainer = styled.div`
-    display: flex;
-    justify-content: space-between;
-    padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
 
-    background: deepskyblue;
+  background: deepskyblue;
 
-    min-height: 6vh;
+  min-height: 6vh;
 
-    position: sticky;
-    top: 0;
+  position: sticky;
+  top: 0;
 
-    z-index: 5;
+  z-index: 5;
 `;
 
 export const NavMyName = styled(Link)`
-    display: flex;
-    justify-self: flex-start;
-    align-items: center;
+  display: flex;
+  justify-self: flex-start;
+  align-items: center;
 
-    font-weight: bold;
-    font-size: 1.5em;
+  font-weight: bold;
+  font-size: 1.5em;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    &:hover {
-        color: white;
-    }
+  &:hover {
+    color: white;
+  }
 `;
 
 export const NavMenu = styled.ul`
-    display: flex;  
+  display: flex;
 
-    align-items: center;
-    text-align: center;
-    list-style: none;    
+  align-items: center;
+  text-align: center;
+  list-style: none;
 `;
 
 export const NavLinks = styled(Link)`
-    padding: 1em;
+  padding: 1em;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    &:hover {
-        color: white;
-    }
+  &:hover {
+    color: white;
+  }
 `;
 
 export const NavItem = styled.li`
-    font-size: 1.5em;
+  font-size: 1.5em;
+`;
+
+export const NavIcons = styled.div`
+  display: flex;
+  justify-content: space-around;
+  width: 11vh;
+  padding-top: 1vh;
 `;
 
 export const Linkedin = styled.img`
-    height: 35px;
-    width: 35px;
+  height: 35px;
+  width: 35px;
 `;
 
 export const GitHub = styled.img`
-    height: 35px;
-    width: 35px;
+  height: 35px;
+  width: 35px;
 
-    padding-left: 1px;
+  padding-left: 1px;
 `;

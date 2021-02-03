@@ -9,6 +9,7 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  NavIcons,
   Linkedin,
   GitHub,
 } from "./NavBarElements";
@@ -18,7 +19,9 @@ import { FaReact, FaGithub, FaPlay } from "react-icons/fa";
 export default function NavBar() {
   return (
     <NavContainer>
-      <NavMyName to="info" smooth={true} offset={-50}>Michael Wearing</NavMyName>
+      <NavMyName to="info" smooth={true} offset={-50}>
+        Michael Wearing
+      </NavMyName>
       <NavMenu>
         <NavItem>
           <NavLinks to="about" smooth={true} offset={-35}>
@@ -41,16 +44,18 @@ export default function NavBar() {
             Contact
           </NavLinks>
         </NavItem>
-        <NavItem>
-          <a href="https://www.linkedin.com/in/michael-wearing/">
-            <Linkedin src={linkedin} />
-          </a>
-        </NavItem>
-        <NavItem>
-          <a href="https://github.com/MichaelWearing">
-            <GitHub src={github} />
-          </a>
-        </NavItem>
+        <NavIcons>
+          <NavItem>
+            <a href="https://www.linkedin.com/in/michael-wearing/">
+              <Linkedin src={linkedin} />
+            </a>
+          </NavItem>
+          <NavItem>
+            <a href="https://github.com/MichaelWearing">
+              <GitHub src={github} />
+            </a>
+          </NavItem>
+        </NavIcons>
       </NavMenu>
     </NavContainer>
   );

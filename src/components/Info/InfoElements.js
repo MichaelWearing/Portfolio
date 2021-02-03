@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { Link } from "react-scroll";
 
 export const InfoContainer = styled.div`
   background: deepskyblue;
@@ -10,18 +11,33 @@ export const InfoContainer = styled.div`
   text-align: center;
 
   padding: 0 30px;
-  min-height: 94vh;
+  ${"" /* min-height: 94vh; */}
 `;
 
 export const InfoH1Container = styled.div`
   display: flex;
   flex-direction: column;
+  text-align: left;
 
-  padding: 0 20px;
+  width: 55%;
+  ${"" /* padding: 0 50px; */}
+
+  min-height: 80vh;
+  padding-top: 27vh;
+`;
+
+export const InfoPTag = styled.p`
+  width: 55%;
+  font-size: 2vh;
+`;
+
+export const InfoGreeting = styled.p`
+  font-size: 4vh;
 `;
 
 export const InfoH1 = styled.h1`
-  font-size: 75px;
+  font-weight: 900;
+  font-size: 12vh;
 `;
 export const InfoH2 = styled.h1`
   font-size: 45px;
@@ -45,6 +61,40 @@ export const InfoText = styled.p`
   }
 `;
 
+/* const bounce = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`; */
+const bounce = keyframes`
+10%{
+  transform: translateY(-10vh);
+}
+30%{
+  transform: translateY(0vh);
+}
+70%{
+  transform: translateY(-10vh);
+}
+100%{
+  transform: translateY(0vh);
+}
+`;
+
+export const ArrowLink = styled(Link)`
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  animation: ${bounce} 3s;
+`;
+
 export const InfoArrow = styled.img`
   display: flex;
 
@@ -56,10 +106,11 @@ export const InfoArrow = styled.img`
 `;
 
 export const Video = styled.video`
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-  ${'' /*   width: 100%;
+  ${
+    "" /*   width: 100%;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
@@ -78,5 +129,6 @@ export const Video = styled.video`
 	z-index: 1;
 	overflow: hidden;
      
-    Constuction video thing*/}
+    Constuction video thing*/
+  }
 `;
