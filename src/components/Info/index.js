@@ -35,7 +35,7 @@ export default function Info() {
           </div>
         </InfoH1Container>
         {/* <InfoImg src={mikey} /> */}
-        <ArrowLink to="about" smooth={true} offset={-35}>
+        <ArrowLink to="about" smooth={true} offset={-50}>
           <InfoArrow src={arrow} />
         </ArrowLink>
       </InfoContainer>

@@ -9,6 +9,9 @@ import {
   MesageBox,
   ContactDiv,
   ContactIcons,
+  MailIcon,
+  LinkedinIcon,
+  GithubIcon
 } from "./ContactElements";
 
 export default function Contact() {
@@ -24,7 +27,7 @@ export default function Contact() {
         Message
         <MesageBox placeholder="Mesage"></MesageBox>
       </ContactBox> */}
- {/*      <br />
+      {/*      <br />
       <br /> */}
       {/* <p>Feel free to contact me via email</p>
       <a href="mailto:mikeywearing@gmail.com">
@@ -37,8 +40,20 @@ export default function Contact() {
       <ContactDiv>
         <p>Get in Touch</p>
         <ContactIcons>
-        <FaEnvelope />  
-        <FaLinkedin />
+          <MailIcon
+            href="mailto:mikeywearing@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaEnvelope />
+          </MailIcon>
+          <LinkedinIcon
+            href="https://www.linkedin.com/in/michael-wearing/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </LinkedinIcon>
         </ContactIcons>
         <p>076 297 02 58</p>
       </ContactDiv>

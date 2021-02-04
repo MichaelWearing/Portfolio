@@ -4,15 +4,19 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import About from "./components/About";
 
+import './index.css';
+
 function App() {
   return (
     <>
       <NavBar />
-      <Info />
-      {/* <div id="test">Hey</div> */}
-      <About />
-      <Projects />
-      <Contact />
+      <div className="background">
+        <Info />
+        {/* <div id="test">Hey</div> */}
+        <About />
+        <Projects />
+        <Contact />
+      </div>
     </>
   );
 }

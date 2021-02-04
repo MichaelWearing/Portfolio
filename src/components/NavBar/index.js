@@ -12,9 +12,11 @@ import {
   NavIcons,
   Linkedin,
   GitHub,
+  LinkedinIcon,
+  GithubIcon
 } from "./NavBarElements";
 
-import { FaReact, FaGithub, FaPlay } from "react-icons/fa";
+import { FaReact, FaGithub, FaPlay, FaLinkedin } from "react-icons/fa";
 
 export default function NavBar() {
   return (
@@ -24,12 +26,12 @@ export default function NavBar() {
       </NavMyName>
       <NavMenu>
         <NavItem>
-          <NavLinks to="about" smooth={true} offset={-35}>
+          <NavLinks to="about" smooth={true} offset={-50}>
             About
           </NavLinks>
         </NavItem>
         <NavItem>
-          <NavLinks to="projects" smooth={true} offset={-35}>
+          <NavLinks to="projects" smooth={true} offset={-50}>
             Projects
           </NavLinks>
         </NavItem>
@@ -40,28 +42,28 @@ export default function NavBar() {
           <NavLinks>Skills</NavLinks>
         </NavItem>
         <NavItem>
-          <NavLinks to="contact" smooth={true} offset={-35}>
+          <NavLinks to="contact" smooth={true} offset={-50}>
             Contact
           </NavLinks>
         </NavItem>
         <NavIcons>
           <NavItem>
-            <a
+            <LinkedinIcon
               href="https://www.linkedin.com/in/michael-wearing/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Linkedin src={linkedin} />
-            </a>
+              <FaLinkedin />
+            </LinkedinIcon>
           </NavItem>
           <NavItem>
-            <a
+            <GithubIcon
               href="https://github.com/MichaelWearing"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <GitHub src={github} />
-            </a>
+              <FaGithub />
+            </GithubIcon>
           </NavItem>
         </NavIcons>
       </NavMenu>

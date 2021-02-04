@@ -28,9 +28,10 @@ export default function Projects() {
           <VerticalTimelineElement
             icon={<FaReact />}
             iconStyle={{ background: "#EE82EE", color: "#fff" }}
+            contentStyle={{ background: 'aliceblue', color: '' }}
           >
             <h3>Portfolio Site</h3>
-            <h4>Date</h4>
+            <h4>05-02-2021</h4>
             <br />
             <PortfolioImg src={portfolio} />
             <br />
@@ -47,7 +48,7 @@ export default function Projects() {
             iconStyle={{ background: "#EE82EE", color: "#fff" }}
           >
             <h3>StarWars App Hackday Project</h3>
-            <h4>Date</h4>
+            <h4>06-11-2020</h4>
             <br />
             <PortfolioImg src={starwars} />
             <br />

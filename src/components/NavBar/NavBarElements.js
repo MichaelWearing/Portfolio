@@ -71,3 +71,20 @@ export const GitHub = styled.img`
 
   padding-left: 1px;
 `;
+
+export const GithubIcon = styled.a`
+  color: black;
+  font-size: 5vh;
+
+  &:hover {
+    color: white;
+  }
+`;
+export const LinkedinIcon = styled.a`
+  color: black;
+  font-size: 5vh;
+
+  &:hover {
+    color: white;
+  }
+`;

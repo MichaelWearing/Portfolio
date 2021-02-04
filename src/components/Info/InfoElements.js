@@ -27,11 +27,13 @@ export const InfoH1Container = styled.div`
 `;
 
 export const InfoPTag = styled.p`
+  color: aliceblue;
   width: 55%;
   font-size: 2vh;
 `;
 
 export const InfoGreeting = styled.p`
+  color: deepskyblue;
   font-size: 4vh;
 `;
 

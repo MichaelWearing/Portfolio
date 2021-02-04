@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const TimelineContainer = styled.div`
-  background: aliceblue;
+  background: deepskyblue;
 `;
 
 export const TimelineH1 = styled.h1`
-  background: #CEDAED;
+  background: aliceblue;
 
   text-align: center;
   font-size: 8vh;

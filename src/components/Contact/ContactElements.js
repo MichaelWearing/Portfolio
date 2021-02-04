@@ -1,10 +1,27 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const SlideIn = keyframes`
+10%{
+  transform: translateX(-10vh);
+}
+30%{
+  transform: translateX(0vh);
+}
+70%{
+  transform: translateX(-10vh);
+}
+100%{
+  transform: translateX(0vh);
+}
+`;
 
 export const ContactH1 = styled.h1`
-  background: #CEDAED;
+  background: aliceblue;
 
   text-align: center;
   font-size: 8vh;
+
+  animation: ${SlideIn} 3s;
 `;
 
 export const ContactBox = styled.div`
@@ -55,5 +72,22 @@ export const ContactIcons = styled.div`
 
   @media screen and (min-width: 1500px) {
     padding: 0px 90vh;
+  }
+`;
+
+export const MailIcon = styled.a`
+  font-size: 8vh;
+  color: black;
+
+  &:hover {
+    color: white;
+  }
+`;
+export const LinkedinIcon = styled.a`
+  font-size: 8vh;
+  color: black;
+
+  &:hover {
+    color: white;
   }
 `;

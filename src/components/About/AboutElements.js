@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AboutH1 = styled.h1`
-  background: #CEDAED;
+  background: aliceblue;
 
   text-align: center;
   font-size: 8vh;
