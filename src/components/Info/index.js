@@ -1,8 +1,6 @@
 import React from "react";
 
-import mikey from "../../images/MikeyCircle.png";
 import arrow from "../../images/ArrowDown.svg";
-import video from "../../images/video.mp4";
 
 import {
   InfoContainer,
@@ -10,12 +8,8 @@ import {
   InfoGreeting,
   InfoH1,
   InfoPTag,
-  InfoH2,
-  InfoImg,
-  InfoText,
   ArrowLink,
   InfoArrow,
-  Video,
 } from "./InfoElements";
 
 export default function Info() {

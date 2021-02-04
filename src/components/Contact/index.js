@@ -4,14 +4,10 @@ import { FaEnvelope, FaLinkedin } from "react-icons/fa";
 
 import {
   ContactH1,
-  ContactBox,
-  ContactDetails,
-  MesageBox,
   ContactDiv,
   ContactIcons,
   MailIcon,
   LinkedinIcon,
-  GithubIcon
 } from "./ContactElements";
 
 export default function Contact() {

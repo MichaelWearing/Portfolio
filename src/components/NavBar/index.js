@@ -1,8 +1,5 @@
 import React from "react";
 
-import linkedin from "../../images/Linkedin.svg";
-import github from "../../images/GitHub.png";
-
 import {
   NavContainer,
   NavMyName,
@@ -10,13 +7,11 @@ import {
   NavItem,
   NavLinks,
   NavIcons,
-  Linkedin,
-  GitHub,
   LinkedinIcon,
-  GithubIcon
+  GithubIcon,
 } from "./NavBarElements";
 
-import { FaReact, FaGithub, FaPlay, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function NavBar() {
   return (
