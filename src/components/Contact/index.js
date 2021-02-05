@@ -8,6 +8,9 @@ import {
   ContactIcons,
   MailIcon,
   LinkedinIcon,
+  ContactText,
+  Footer,
+  TopScroll,
 } from "./ContactElements";
 
 export default function Contact() {
@@ -51,8 +54,18 @@ export default function Contact() {
             <FaLinkedin />
           </LinkedinIcon>
         </ContactIcons>
-        <p>076 297 02 58</p>
       </ContactDiv>
+      <ContactText>
+        Currently Looking for work! My inbox is open to all however, whether you
+        are interested in hiring me or simply have a question, don't hesitate to
+        reach out. Have a nice day!
+      </ContactText>
+      <Footer>
+        <TopScroll to="info" smooth={true} offset={-50}>
+          ^^^ To The Top ^^^
+        </TopScroll>
+        <p> Designed and Built by Michael Wearing</p>
+      </Footer>
     </>
   );
 }

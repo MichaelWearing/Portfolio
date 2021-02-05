@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { Link } from "react-scroll";
 
 const SlideIn = keyframes`
 10%{
@@ -62,7 +63,7 @@ export const ContactDiv = styled.div`
   text-align: center;
   font-size: 5vh;
 
-  padding: 5vh 0 10vh 0;
+  padding: 5vh 0 0 0;
 `;
 
 export const ContactIcons = styled.div`
@@ -89,5 +90,29 @@ export const LinkedinIcon = styled.a`
 
   &:hover {
     color: white;
+  }
+`;
+
+export const ContactText = styled.p`
+  text-align: center;
+  width: 100%;
+  padding: 0 30% 3vh;
+`;
+
+export const Footer = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  color: white;
+
+  width: 98%;
+  padding-left: 2%;
+`;
+
+export const TopScroll = styled(Link)`
+  cursor: pointer;
+
+  &:hover {
+    color: black;
   }
 `;
