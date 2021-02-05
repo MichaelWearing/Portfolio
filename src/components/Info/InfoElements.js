@@ -32,17 +32,52 @@ export const InfoPTag = styled.p`
   font-size: 2vh;
 `;
 
+const fadeIn = keyframes`
+from { 
+  opacity: 0;
+}
+to { 
+  opacity: 1;
+}
+`;
+/* const fadeIn = keyframes`
+0%{
+  opacity: 0;
+}
+20%{
+  opacity: 0.2;
+}
+40%{
+  opacity: 0.4;}
+60%{
+  opacity: 0.6;
+}
+80%{
+  opacity: 0.8;
+}
+100%{
+  opacity: 1;
+}
+`; */
+
 export const InfoGreeting = styled.p`
   color: deepskyblue;
   font-size: 4vh;
+
+  ${"" /* animation: ${fadeIn} 2s; */}
+  animation: ${fadeIn} 4s;
 `;
 
 export const InfoH1 = styled.h1`
   font-weight: 900;
   font-size: 12vh;
+
+  animation: ${fadeIn} 8s;
 `;
 export const InfoH2 = styled.h1`
   font-size: 45px;
+
+  animation: ${fadeIn} 12s;
 `;
 
 export const InfoImg = styled.img`

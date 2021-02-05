@@ -1,15 +1,28 @@
 import React from "react";
 
 import mikey from "../../images/MikeyCircle.png";
+import arrow from "../../images/ArrowDown.svg";
 
-import { AboutH1, AboutContent, AboutText, AboutText1, AboutText2, MikeyImg } from "./AboutElements";
+import {
+  AboutH1,
+  AboutContent,
+  AboutText,
+  AboutText1,
+  AboutText2,
+  AboutSkills,
+  MikeyImg,
+  SkillList,
+  Skill,
+  ArrowLink,
+  InfoArrow
+} from "./AboutElements";
 
 export default function About() {
   return (
     <>
       <AboutH1 id="about">About Me</AboutH1>
-      <AboutContent >
-        <AboutText >
+      <AboutContent>
+        <AboutText>
           <AboutText1>
             Hobby Coder, turned Full-Stack Developer. I began my tech journey by
             self teaching myself Java before landing my first position in a
@@ -22,9 +35,23 @@ export default function About() {
             Growing up playing video games, problem solving has always been
             somthing that I am great at.
           </AboutText2>
+          <AboutSkills>
+            Some technologies i've been working with recently:
+            <SkillList>
+              <Skill>▹ JavaScript (ES6+)</Skill>
+              <Skill>▹ Java</Skill>
+              <Skill>▹ React</Skill>
+              <Skill>▹ Express</Skill>
+              <Skill>▹ Node.js</Skill>
+              <Skill>▹ HTML & CSS</Skill>
+            </SkillList>
+          </AboutSkills>
         </AboutText>
         <MikeyImg src={mikey} />
       </AboutContent>
+      <ArrowLink to="projects" smooth={true} offset={-50}>
+          <InfoArrow src={arrow} />
+        </ArrowLink>
     </>
   );
 }
