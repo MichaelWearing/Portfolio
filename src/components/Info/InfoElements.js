@@ -26,78 +26,50 @@ export const InfoH1Container = styled.div`
   padding-top: 27vh;
 `;
 
-export const InfoPTag = styled.p`
-  color: aliceblue;
-  width: 55%;
-  font-size: 2vh;
+const FadeIn = keyframes`
+    0% { 
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% { 
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+      transform: translateX(-50px);    }
+    100% { 
+      opacity: 1;
+    }
 `;
-
-const fadeIn = keyframes`
-from { 
-  opacity: 0;
-}
-to { 
-  opacity: 1;
-}
-`;
-/* const fadeIn = keyframes`
-0%{
-  opacity: 0;
-}
-20%{
-  opacity: 0.2;
-}
-40%{
-  opacity: 0.4;}
-60%{
-  opacity: 0.6;
-}
-80%{
-  opacity: 0.8;
-}
-100%{
-  opacity: 1;
-}
-`; */
 
 export const InfoGreeting = styled.p`
   color: deepskyblue;
   font-size: 4vh;
 
-  ${"" /* animation: ${fadeIn} 2s; */}
-  animation: ${fadeIn} 4s;
+  animation: ${FadeIn} 1s ease;
 `;
 
 export const InfoH1 = styled.h1`
   font-weight: 900;
   font-size: 12vh;
 
-  animation: ${fadeIn} 8s;
+  animation: ${FadeIn} 2s;
 `;
-export const InfoH2 = styled.h1`
-  font-size: 45px;
 
-  animation: ${fadeIn} 12s;
+export const InfoPTag = styled.p`
+  color: aliceblue;
+  width: 55%;
+  font-size: 2vh;
+
+  animation: ${FadeIn} 3s ease;
 `;
 
 export const InfoImg = styled.img`
   height: 15em;
   width: 15em;
 `;
-
-export const InfoText = styled.p`
-  background: deepskyblue;
-
-  padding: 0 400px;
-  text-align: center;
-  font-size: 24px;
-  min-height: 25vh;
-
-  @media screen and (min-width: 1500px) {
-    padding: 0 550px;
-  }
-`;
-
 /* const bounce = keyframes`
   from {
     transform: rotate(0deg);
@@ -108,18 +80,27 @@ export const InfoText = styled.p`
   }
 `; */
 const bounce = keyframes`
-10%{
-  transform: translateY(-10vh);
-}
-30%{
-  transform: translateY(0vh);
-}
-70%{
-  transform: translateY(-10vh);
-}
-100%{
-  transform: translateY(0vh);
-}
+    0% { 
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% { 
+      opacity: 0;
+    }
+    60%{
+      transform: translateY(-10vh);
+    }
+    75%{
+      transform: translateY(0vh);
+    }
+    85%{
+      transform: translateY(-10vh);
+    }
+    100%{
+      transform: translateY(0vh);
+    }
 `;
 
 export const ArrowLink = styled(Link)`
@@ -129,7 +110,7 @@ export const ArrowLink = styled(Link)`
     opacity: 0.7;
   }
 
-  animation: ${bounce} 3s;
+  animation: ${bounce} 6s;
 `;
 
 export const InfoArrow = styled.img`
