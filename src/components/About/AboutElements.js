@@ -17,7 +17,7 @@ export const AboutContent = styled.div`
   border-radius: 16px;
   margin: auto;
   max-width: 61em;
-  min-height: 70vh;
+  min-height: 67vh;
   align-content: center;
 
   border: 5px aliceblue solid;

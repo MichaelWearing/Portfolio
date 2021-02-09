@@ -30,12 +30,12 @@ export default function NavBar() {
             Projects
           </NavLinks>
         </NavItem>
-        <NavItem>
+        {/* <NavItem>
           <NavLinks>Experience</NavLinks>
         </NavItem>
         <NavItem>
           <NavLinks>Skills</NavLinks>
-        </NavItem>
+        </NavItem> */}
         <NavItem>
           <NavLinks to="contact" smooth={true} offset={-50}>
             Contact
