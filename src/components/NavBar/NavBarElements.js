@@ -75,7 +75,7 @@ export const GitHub = styled.img`
 
 export const GithubIcon = styled.a`
   color: black;
-  font-size: 5vh;
+  font-size: 4vh;
 
   &:hover {
     color: white;
@@ -83,7 +83,7 @@ export const GithubIcon = styled.a`
 `;
 export const LinkedinIcon = styled.a`
   color: black;
-  font-size: 5vh;
+  font-size: 4vh;
 
   &:hover {
     color: white;
