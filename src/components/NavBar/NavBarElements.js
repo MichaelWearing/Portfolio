@@ -7,6 +7,7 @@ export const NavContainer = styled.div`
   padding: 0 24px;
 
   background: deepskyblue;
+  border-bottom: 1px solid aliceblue;
 
   min-height: 6vh;
 
