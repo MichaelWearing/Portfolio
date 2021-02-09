@@ -19,6 +19,11 @@ export const AboutContent = styled.div`
   max-width: 61em;
   min-height: 70vh;
   align-content: center;
+
+  border: 5px aliceblue solid;
+  margin-top: 3vh;
+  padding: 0 3vh;
+  background: aliceblue;
 `;
 
 export const AboutText = styled.div`
@@ -31,8 +36,8 @@ export const AboutText1 = styled.p`
   ${"" /* background: deepskyblue; */}
 
   ${"" /* padding: 0 400px; */}
-  ${'' /* padding-bottom: 8vh; */}
-  ${'' /* text-align: center; */}
+  ${"" /* padding-bottom: 8vh; */}
+  ${"" /* text-align: center; */}
   font-size: 22px;
   min-height: 24vh;
 
@@ -44,7 +49,7 @@ export const AboutText2 = styled.p`
   ${"" /* background: deepskyblue; */}
 
   ${"" /* padding: 0 400px 43vh 400px; */}
-  ${'' /* text-align: center; */}
+  ${"" /* text-align: center; */}
   font-size: 22px;
   min-height: 16vh;
 
@@ -56,6 +61,8 @@ export const AboutText2 = styled.p`
 export const MikeyImg = styled.img`
   height: 20em;
   width: 20em;
+
+  align-self: center;
 `;
 
 export const AboutSkills = styled.p`
@@ -75,6 +82,7 @@ export const SkillList = styled.ul`
   overflow: hidden;
   list-style: none;
 `;
+
 export const Skill = styled.li`
   position: relative;
   margin-bottom: 10px;
