@@ -10,7 +10,7 @@ import {
   LinkedinIcon,
   ContactText,
   Footer,
-  TopScroll,
+  /* TopScroll, */
 } from "./ContactElements";
 
 export default function Contact() {
