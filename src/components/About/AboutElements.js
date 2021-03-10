@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 import { Link } from "react-scroll";
 
 export const AboutH1 = styled.h1`
-  background: aliceblue;
+  background: #fff;
 
   text-align: center;
   font-size: 8vh;
@@ -20,10 +20,10 @@ export const AboutContent = styled.div`
   min-height: 67vh;
   align-content: center;
 
-  border: 5px aliceblue solid;
+  border: 5px solid deepskyblue;
   margin-top: 3vh;
   padding: 0 3vh;
-  background: aliceblue;
+  background: #fff;
 `;
 
 export const AboutText = styled.div`

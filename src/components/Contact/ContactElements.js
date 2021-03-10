@@ -17,7 +17,7 @@ const SlideIn = keyframes`
 `;
 
 export const ContactH1 = styled.h1`
-  background: aliceblue;
+  background: #fff;
 
   text-align: center;
   font-size: 8vh;
@@ -103,7 +103,7 @@ export const Footer = styled.div`
   display: flex;
   justify-content: space-between;
 
-  color: white;
+  color: deepskyblue;
 
   width: 98%;
   padding-left: 2%;
