@@ -61,9 +61,9 @@ export default function Contact() {
         reach out. Have a nice day!
       </ContactText>
       <Footer>
-        <TopScroll to="info" smooth={true} offset={-50}>
+        {/* <TopScroll to="info" smooth={true} offset={-50}>
           ^^^ To The Top ^^^
-        </TopScroll>
+        </TopScroll> */}
         <p> Designed and Built by Michael Wearing</p>
       </Footer>
     </>

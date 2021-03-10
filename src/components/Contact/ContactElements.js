@@ -18,6 +18,7 @@ const SlideIn = keyframes`
 
 export const ContactH1 = styled.h1`
   background: #fff;
+  color: deepskyblue;
 
   text-align: center;
   font-size: 8vh;
@@ -81,7 +82,7 @@ export const MailIcon = styled.a`
   color: black;
 
   &:hover {
-    color: white;
+    color: deepskyblue;
   }
 `;
 export const LinkedinIcon = styled.a`
@@ -89,24 +90,25 @@ export const LinkedinIcon = styled.a`
   color: black;
 
   &:hover {
-    color: white;
+    color: deepskyblue;
   }
 `;
 
 export const ContactText = styled.p`
   text-align: center;
   width: 100%;
-  padding: 0 30% 3vh;
+  padding: 0 30% 10vh;
 `;
 
 export const Footer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
   color: deepskyblue;
 
   width: 98%;
   padding-left: 2%;
+  padding-bottom: 5vh;
 `;
 
 export const TopScroll = styled(Link)`

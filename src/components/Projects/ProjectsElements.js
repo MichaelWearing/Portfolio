@@ -6,6 +6,7 @@ export const TimelineContainer = styled.div`
 
 export const TimelineH1 = styled.h1`
   background: #fff;
+  color: deepskyblue;
 
   text-align: center;
   font-size: 8vh;
