@@ -42,9 +42,11 @@ export const AboutText1 = styled.p`
   font-size: 22px;
   min-height: 24vh;
 
-  ${"" /* @media screen and (min-width: 1500px) {
+  ${
+    "" /* @media screen and (min-width: 1500px) {
     padding: 0 550px;
-  } */}
+  } */
+  }
 `;
 export const AboutText2 = styled.p`
   ${"" /* background: deepskyblue; */}
@@ -54,9 +56,11 @@ export const AboutText2 = styled.p`
   font-size: 22px;
   min-height: 16vh;
 
-  ${"" /* @media screen and (min-width: 1500px) {
+  ${
+    "" /* @media screen and (min-width: 1500px) {
     padding: 0 550px;
-  } */}
+  } */
+  }
 `;
 
 export const MikeyImg = styled.img`
@@ -70,9 +74,11 @@ export const AboutSkills = styled.p`
   font-size: 22px;
   min-height: 18vh;
 
-  ${"" /* @media screen and (min-width: 1500px) {
+  ${
+    "" /* @media screen and (min-width: 1500px) {
     padding: 0 550px;
-  } */}
+  } */
+  }
 `;
 
 export const SkillList = styled.ul`
@@ -91,18 +97,27 @@ export const Skill = styled.li`
 `;
 
 const bounce = keyframes`
-10%{
-  transform: translateY(-10vh);
-}
-30%{
-  transform: translateY(0vh);
-}
-70%{
-  transform: translateY(-10vh);
-}
-100%{
-  transform: translateY(0vh);
-}
+    0% { 
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% { 
+      opacity: 0;
+    }
+    60%{
+      transform: translateY(-10vh);
+    }
+    75%{
+      transform: translateY(0vh);
+    }
+    85%{
+      transform: translateY(-10vh);
+    }
+    100%{
+      transform: translateY(0vh);
+    }
 `;
 
 export const ArrowLink = styled(Link)`
@@ -112,7 +127,7 @@ export const ArrowLink = styled(Link)`
     opacity: 0.7;
   }
 
-  animation: ${bounce} 3s;
+  animation: ${bounce} 6s;
 `;
 
 export const InfoArrow = styled.img`

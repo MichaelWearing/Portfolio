@@ -24,6 +24,25 @@ export const InfoH1Container = styled.div`
 
   min-height: 80vh;
   padding-top: 27vh;
+
+  cursor: default;
+`;
+
+const Bounce = keyframes`
+  0%   { transform: scale(1,1)      translateY(0); }
+  10%  { transform: scale(1.1,.9)   translateY(0); }
+  30%  { transform: scale(.9,1.1)   translateY(-50px); }
+  50%  { transform: scale(1.05,.95) translateY(0); }
+  57%  { transform: scale(1,1)      translateY(-7px); }
+  64%  { transform: scale(1,1)      translateY(0); }
+  100% { transform: scale(1,1)      translateY(0); }
+`;
+
+export const InfoH1Letters = styled.p`
+  &:hover {
+    color: deepskyblue;
+    animation: ${Bounce} 1s ease;
+  }
 `;
 
 const FadeIn = keyframes`
@@ -51,7 +70,8 @@ export const InfoGreeting = styled.p`
   animation: ${FadeIn} 1s ease;
 `;
 
-export const InfoH1 = styled.h1`
+export const InfoH1Div = styled.div`
+  display: flex;
   font-weight: 900;
   font-size: 12vh;
 
