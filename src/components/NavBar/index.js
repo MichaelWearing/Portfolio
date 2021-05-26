@@ -16,7 +16,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 export default function NavBar() {
   return (
     <NavContainer>
-      <NavMyName to="info" smooth={true} offset={-50}>
+      <NavMyName to="info" smooth={true} offset={-100}>
         Michael Wearing
       </NavMyName>
       <NavMenu>
