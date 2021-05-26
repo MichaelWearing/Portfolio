@@ -1,14 +1,49 @@
 import styled, { keyframes } from "styled-components";
 import { Link } from "react-scroll";
 
+export const AboutDiv = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+`;
+
+const SlideIn = keyframes`
+10%{
+  transform: translateX(-10vh);
+}
+30%{
+  transform: translateX(0vh);
+}
+70%{
+  transform: translateX(-10vh);
+}
+100%{
+  transform: translateX(0vh);
+}
+`;
+
 export const AboutH1 = styled.h1`
-  background: #fff;
+  color: deepskyblue;
+
+  text-align: center;
+  font-size: 8vh;
+
+  animation: ${SlideIn} 3s;
+
+  ${"" /* padding-bottom: 7vh; */}
+`;
+
+export const StaticAboutH1 = styled.h1`
   color: deepskyblue;
 
   text-align: center;
   font-size: 8vh;
 
   ${"" /* padding-bottom: 7vh; */}
+`;
+
+export const AboutH1Div = styled.div`
+  background: #fff;
 `;
 
 export const AboutContent = styled.div`
@@ -24,7 +59,7 @@ export const AboutContent = styled.div`
   border: 3px solid deepskyblue;
   margin-top: 3vh;
   padding: 0 3vh;
-  background: #fff;
+  ${"" /* background: #fff; */}
 `;
 
 export const AboutText = styled.div`

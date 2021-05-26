@@ -1,15 +1,42 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const TimelineContainer = styled.div`
   background: aliceblue;
 `;
 
+const SlideIn = keyframes`
+10%{
+  transform: translateX(-10vh);
+}
+30%{
+  transform: translateX(0vh);
+}
+70%{
+  transform: translateX(-10vh);
+}
+100%{
+  transform: translateX(0vh);
+}
+`;
+
 export const TimelineH1 = styled.h1`
-  background: #fff;
   color: deepskyblue;
 
   text-align: center;
   font-size: 8vh;
+
+  animation: ${SlideIn} 3s;
+`;
+
+export const StaticTimelineH1 = styled.h1`
+  color: deepskyblue;
+
+  text-align: center;
+  font-size: 8vh;
+`;
+
+export const TimelineH1Div = styled.div`
+  background: #fff;
 `;
 
 export const PortfolioImg = styled.img`

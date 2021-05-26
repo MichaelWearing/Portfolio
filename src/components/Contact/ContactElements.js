@@ -26,6 +26,20 @@ export const ContactH1 = styled.h1`
   animation: ${SlideIn} 3s;
 `;
 
+export const ContactH1Div = styled.div`
+  background: #fff;
+`;
+
+
+
+export const StaticContactH1 = styled.h1`
+  background: #fff;
+  color: deepskyblue;
+
+  text-align: center;
+  font-size: 8vh;
+`;
+
 export const ContactBox = styled.div`
   background: springgreen;
 

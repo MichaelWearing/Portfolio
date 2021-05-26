@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 import { Link } from "react-scroll";
 
 export const InfoContainer = styled.div`
-  background: deepskyblue;
+  background: mediumpurple;
 
   display: flex;
   flex-direction: column;

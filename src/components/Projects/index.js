@@ -1,5 +1,7 @@
 import React from "react";
 
+import useOnScreen from "../CustomHooks/useOnScreen"
+
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -12,23 +14,31 @@ import starwars from "../../images/StarWars.png";
 
 import {
   TimelineContainer,
+  TimelineH1Div,
   TimelineH1,
+  StaticTimelineH1,
   PortfolioImg,
   LinkContainer,
   Link,
 } from "./ProjectsElements";
 
 export default function Projects() {
+  const [ref, visible] = useOnScreen({ threshold: 0.8 });
+
   return (
     <>
       <TimelineContainer>
-        <TimelineH1 id="projects">Projects</TimelineH1>
+        <TimelineH1Div ref={ref} id="projects">
+          {visible ? 
+          <TimelineH1>Projects</TimelineH1> :
+          <StaticTimelineH1>Projects</StaticTimelineH1>}
+        </TimelineH1Div>
 
         <VerticalTimeline>
           <VerticalTimelineElement
             icon={<FaReact />}
             iconStyle={{ background: "deepskyblue", color: "#fff" }}
-            contentStyle={{ background: '#fff', color: '' }}
+            contentStyle={{ background: "#fff", color: "" }}
           >
             <h3>Portfolio Site</h3>
             <h4>05-02-2021</h4>
@@ -55,9 +65,9 @@ export default function Projects() {
             <h4>Description: </h4>
             <p>
               This is a project I made towards the end of my time at salt. This
-              app was made in 1 day. It is an app that allows the user to
-              choose a planet, and then a character from that planet, and
-              finally see information about that character.
+              app was made in 1 day. It is an app that allows the user to choose
+              a planet, and then a character from that planet, and finally see
+              information about that character.
             </p>
             <br />
             <LinkContainer>
