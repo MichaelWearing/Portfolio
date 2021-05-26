@@ -23,7 +23,7 @@ import {
 } from "./ProjectsElements";
 
 export default function Projects() {
-  const [ref, visible] = useOnScreen({ threshold: 0.8 });
+  const [ref, visible] = useOnScreen({ threshold: 0.1 });
 
   return (
     <>

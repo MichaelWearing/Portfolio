@@ -2,16 +2,10 @@ import styled, { keyframes } from "styled-components";
 import { Link } from "react-scroll";
 
 const SlideIn = keyframes`
-10%{
-  transform: translateX(-10vh);
-}
-30%{
-  transform: translateX(0vh);
+0%{
+  transform: translateX(-80vh);
 }
 70%{
-  transform: translateX(-10vh);
-}
-100%{
   transform: translateX(0vh);
 }
 `;

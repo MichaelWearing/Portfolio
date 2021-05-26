@@ -23,7 +23,7 @@ import {
 } from "./AboutElements";
 
 export default function About() {
-  const [ref, visible] = useOnScreen({ threshold: 0.8 });
+  const [ref, visible] = useOnScreen({ threshold: 0.1 });
   return (
     <>
       <AboutDiv id="bubbles">

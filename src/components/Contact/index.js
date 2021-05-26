@@ -19,7 +19,7 @@ import {
 
 export default function Contact() {
 
-  const [ref, visible] = useOnScreen({ threshold: 0.8 });
+  const [ref, visible] = useOnScreen({ threshold: 0.1 });
 
   return (
     <>

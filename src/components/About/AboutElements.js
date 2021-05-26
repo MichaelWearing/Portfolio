@@ -8,16 +8,10 @@ export const AboutDiv = styled.div`
 `;
 
 const SlideIn = keyframes`
-10%{
-  transform: translateX(-10vh);
-}
-30%{
-  transform: translateX(0vh);
+0%{
+  transform: translateX(-80vh);
 }
 70%{
-  transform: translateX(-10vh);
-}
-100%{
   transform: translateX(0vh);
 }
 `;
@@ -28,7 +22,7 @@ export const AboutH1 = styled.h1`
   text-align: center;
   font-size: 8vh;
 
-  animation: ${SlideIn} 3s;
+  animation: ${SlideIn} 2.5s;
 
   ${"" /* padding-bottom: 7vh; */}
 `;
