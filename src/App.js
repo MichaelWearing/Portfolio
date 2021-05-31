@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 10);
+    }, 3000);
   }, []);
 
   return (
@@ -24,7 +24,6 @@ function App() {
       <NavBar />
       <div className="background">
         <Info />
-        {/* <div id="test">Hey</div> */}
         <About />
         <Projects />
         <Contact />
