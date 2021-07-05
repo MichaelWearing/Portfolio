@@ -1,6 +1,6 @@
 import React from "react";
 
-import useOnScreen from "../CustomHooks/useOnScreen"
+import useOnScreen from "../CustomHooks/useOnScreen";
 
 import {
   VerticalTimeline,
@@ -11,6 +11,7 @@ import { FaReact, FaGithub, FaPlay } from "react-icons/fa";
 
 import portfolio from "../../images/Portfolio.png";
 import starwars from "../../images/StarWars.png";
+import shoppingCart from "../../images/ShoppingCart.png";
 
 import {
   TimelineContainer,
@@ -29,9 +30,11 @@ export default function Projects() {
     <>
       <TimelineContainer>
         <TimelineH1Div ref={ref} id="projects">
-          {visible ? 
-          <TimelineH1>Projects</TimelineH1> :
-          <StaticTimelineH1>Projects</StaticTimelineH1>}
+          {visible ? (
+            <TimelineH1>Projects</TimelineH1>
+          ) : (
+            <StaticTimelineH1>Projects</StaticTimelineH1>
+          )}
         </TimelineH1Div>
 
         <VerticalTimeline>
@@ -48,7 +51,11 @@ export default function Projects() {
             <h4>Description: </h4>
             <p>This is a link to the code for this website.</p>
             <br />
-            <Link href="https://github.com/MichaelWearing/Portfolio">
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/MichaelWearing/Portfolio"
+            >
               <FaGithub />
               Code
             </Link>
@@ -71,11 +78,54 @@ export default function Projects() {
             </p>
             <br />
             <LinkContainer>
-              <Link href="https://github.com/MichaelWearing/Salt-HackDay-StarWars">
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/MichaelWearing/Salt-HackDay-StarWars"
+              >
                 <FaGithub />
                 Code
               </Link>
-              <Link href="https://github.com/MichaelWearing/Salt-HackDay-StarWars">
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/MichaelWearing/Salt-HackDay-StarWars"
+              >
+                <FaPlay />
+                Demo
+              </Link>
+            </LinkContainer>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            icon={<FaReact />}
+            iconStyle={{ background: "deepskyblue", color: "#fff" }}
+          >
+            <h3>TypeScript React Shop</h3>
+            <h4>05-07-2021</h4>
+            <br />
+            <PortfolioImg src={shoppingCart} />
+            <br />
+            <h4>Description: </h4>
+            <p>
+              A TypeScript/ React Shopping Cart Application. It uses the free
+              Fake Store API to generate products for the store. :
+              https://fakestoreapi.com/
+            </p>
+            <br />
+            <LinkContainer>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/MichaelWearing/TypeScriptShoppingCart"
+              >
+                <FaGithub />
+                Code
+              </Link>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://typescript-react-online-shop.netlify.app/"
+              >
                 <FaPlay />
                 Demo
               </Link>
