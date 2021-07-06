@@ -17,7 +17,7 @@ export default function NavBar() {
   return (
     <NavContainer>
       <NavMyName to="info" smooth={true} offset={-100}>
-        Steven Wearing
+        Michael Wearing
       </NavMyName>
       <NavMenu>
         <NavItem>
